@@ -26,11 +26,6 @@ Figure 1: Original image and the reconstructed versions from maxpool layer 1,2 a
 | <img src="https://bitbucket.org/repo/Lyk4Mq/images/3869149957-deep_738.png" width="196" height="196"> | <img src="https://bitbucket.org/repo/Lyk4Mq/images/4283505926-deep_915.png" width="196" height="196"> | <img src="https://bitbucket.org/repo/Lyk4Mq/images/2629248471-deep_14.png" width="196" height="196"> | <img src="https://bitbucket.org/repo/Lyk4Mq/images/3971745292-deep_22.png" width="196" height="196"> |
 | Cauliflower | Baby Milk bottle | Sea lion | Dolphin |
 
-
-![tensorboard.png](https://bitbucket.org/repo/Lyk4Mq/images/2741459243-tensorboard.png)
-
-[View Full size](https://bitbucket.org/repo/Lyk4Mq/images/2005224096-tensorboard.png)
-
 #### Requirements:
 * Tensorflow (>= 1.0)
 * numpy

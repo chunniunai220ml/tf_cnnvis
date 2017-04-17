@@ -296,7 +296,7 @@ def _deconvolution(graph, sess, op_tensor, X, feed_dict):
 		tensor_shape = op_tensor.get_shape().as_list()
 
 		with sess.as_default() as sess:
-			# creating placeholders to pass featuremaps and 
+			# creating placeholders to pass index of featuremaps and 
 			# creating gradient ops
 			featuremap = [tf.placeholder(tf.int32) for i in range(config["N"])]
 			reconstruct = [tf.gradients(tf.transpose(tf.transpose(op_tensor)[featuremap[i]]), X)[0] for i in range(config["N"])]

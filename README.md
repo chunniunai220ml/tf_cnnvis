@@ -31,7 +31,7 @@ Figure 1: Original image and the reconstructed versions from maxpool layer 1,2 a
 
 [View Full size](https://bitbucket.org/repo/Lyk4Mq/images/2005224096-tensorboard.png)
 
-### Requirements:
+#### Requirements:
 * Tensorflow (>= 1.0)
 * numpy
 * scipy
@@ -44,7 +44,7 @@ If you are using pip you can install these with
 
 ```pip install tensorflow numpy scipy h5py wget Pillow six```
 
-### Setup script
+#### Setup script
 Clone the repository
 
 ```
@@ -63,7 +63,7 @@ sudo python setup.py clean
 ```
 
 
-### API
+#### API
 **tf_cnnvis.activation_visualization(graph_or_path, value_feed_dict, input_tensor=None, layers='r', path_logdir='./Log', path_outdir='./Output')** 
 
 The function to generate the activation visualizations of the input image at the given layer.
@@ -119,7 +119,7 @@ The function to generate the visualizations of the input image reconstructed fro
 #### Returns
 * is_success (boolean) – True if the function ran successfully. False otherwise
 
-## To visualize in TensorBoard
+#### To visualize in TensorBoard
 To start Tensorflow, run the following command in console
 
 ```
@@ -130,8 +130,8 @@ tensorboard --logdir=./Log
 
 and under tensorboard homepage look under the *Images* tab
 
-## Additional helper functions
-### tf_cnnvis.utils.image_normalization(image, ubound=255.0, epsilon=1e-07)
+#### Additional helper functions
+#### tf_cnnvis.utils.image_normalization(image, ubound=255.0, epsilon=1e-07)
 Performs Min-Max image normalization. Transforms the pixel values to range [0, ubound]
 #### Parameters
 * image (3-D numpy array) – A numpy array to normalize
@@ -140,7 +140,7 @@ Performs Min-Max image normalization. Transforms the pixel values to range [0, u
 #### Returns
 * norm_image (3-D numpy array) – The normalized image
 
-### tf_cnnvis.utils.convert_into_grid(Xs, padding=1, ubound=255.0)
+#### tf_cnnvis.utils.convert_into_grid(Xs, padding=1, ubound=255.0)
 Convert 4-D numpy array into a grid of images
 #### Parameters
 * Xs (4-D numpy array (first axis contations an image)) – The 4D array of images to put onto grid

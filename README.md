@@ -1,4 +1,7 @@
-# tf_cnnvis
+
+# InFoCusp
+
+## tf_cnnvis
 
 tf_cnnvis is a CNN visualization library which you can to better understand your own CNNs. We use the [TensorFlow](https://www.tensorflow.org/) library at the backend and the generated images are displayed in [TensorBoard](https://www.tensorflow.org/get_started/summaries_and_tensorboard). We have implemented 2 CNN visualization techniques so far:
 
@@ -28,7 +31,7 @@ Figure 1: Original image and the reconstructed versions from maxpool layer 1,2 a
 
 [View Full size](https://bitbucket.org/repo/Lyk4Mq/images/2005224096-tensorboard.png)
 
-## Requirements:
+### Requirements:
 * Tensorflow (>= 1.0)
 * numpy
 * scipy
@@ -41,7 +44,7 @@ If you are using pip you can install these with
 
 ```pip install tensorflow numpy scipy h5py wget Pillow six```
 
-## Setup script
+### Setup script
 Clone the repository
 
 ```
@@ -60,7 +63,7 @@ sudo python setup.py clean
 ```
 
 
-## API
+### API
 **tf_cnnvis.activation_visualization(graph_or_path, value_feed_dict, input_tensor=None, layers='r', path_logdir='./Log', path_outdir='./Output')** 
 
 The function to generate the activation visualizations of the input image at the given layer.
